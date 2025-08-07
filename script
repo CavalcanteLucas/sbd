@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for chap in /home/lucas/codes/misc/sbd/*; do
+    if [[ "$chap" == *"chap"* ]]; then
+        cd $chap
+        for file in *;do
+            filename=$(echo $file | cut -d "." -f 1)
+            chapter=$(echo $filename | cut -d "-" -f 1)
+            question=$(echo $filename | cut -d "-" -f 2)
+            if [ "$question" -lt "10" ]; then
+                mv $filename $chapter-0$question
+            fi
+        done
+    fi
+done
