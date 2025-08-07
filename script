@@ -8,7 +8,7 @@ for chap in /home/lucas/codes/misc/sbd/*; do
             chapter=$(echo $filename | cut -d "-" -f 1)
             question=$(echo $filename | cut -d "-" -f 2)
             if [ "$question" -lt "10" ]; then
-                mv $filename $chapter-0$question
+                mv $filename.md $chapter-0$question.md
             fi
         done
     fi
