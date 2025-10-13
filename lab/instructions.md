@@ -1,5 +1,4 @@
 Lab Instructions
--
 
 
 - Download tools:
@@ -9,6 +8,7 @@ Lab Instructions
     - **Option 1**: **pgAdmin4** - https://www.pgadmin.org/
     - **Option 2**: **BeeKeeper** - https://www.pgadmin.org/
 
+```
 - Configure PostgreSQL
   - **Option 1**: Locally (Suggested for more advanced users)
       - Install PostgreSQL.
@@ -38,6 +38,13 @@ Lab Instructions
         /usr/lib/postgresql/16/bin/pg_ctl -D dbbook restart
         ```
 
+      - Connect to PostgreSQL
+        - Run:
+          ```
+          psql -h /tmp -p 11433 -d postgres
+          ```
+```
+
   - **Option 2**: Using Docker (Preferred for beginners due to simplicity)
     - Install and configure Docker
     - Fetch PostgreSQL image and verify it has been downloaded successfully:
@@ -51,11 +58,10 @@ Lab Instructions
       ```
       Optionally, add flag `-d` for running it in the background.
 
-- Connect to PostgreSQL
-  - Run:
-    ```
-    psql -h /tmp -p 11433 -d postgres
-    ```
+    - Connect to database:
+      ```
+      PGPASSWORD=1234 psql -h localhost -p 5432 -U postgres -d postgres
+      ```
 
   - **Optionally** via user interface:
     - When connected, create role to allow UI to connect with the DB:
@@ -74,16 +80,16 @@ Lab Instructions
   - **DDL**
     - Use the file `DDL.sql` for the first time. You can copy-paste the content of the file onto the query interface of your choice (CLI/UI) and run it. Alternatively, execute all commands within the file with:
       ```
-      psql -h /tmp -p 11433 -d postgres -f DDL.sql
+      PGPASSWORD=1234 psql -h localhost -p 11433 -U postgres -d postgres -f lab/DDL.sql
       ```
     - Use the file `DDL+drop.sql` if you wish to recreate the database after dropping existing tables
   - **SQL code for creating small relations**
     - The file `smallRelationsInsertFile.sql` contains data that matches *Appendix A* exactly. The file contains SQL insert statements to load data into all the tables, after first deleting any data that the tables currently contain.
       ```
-      psql -h /tmp -p 11433 -d postgres -f smallRelationsInsertFile.sql
+      PGPASSWORD=1234 psql -h localhost -p 11433 -U postgres -d postgres -f lab/smallRelationsInsertFile.sql
       ```
     - The data include students taking courses outside their department, and instructors teaching courses outside their department; this helps detect errors in natural join specifications that accidentally equate department names of students or instructors with department names of courses.
-    - To verify data has been successfully created, run this query:
+    - To verify data has been successfully created, run this query (after running `ANALYZE;`):
       ```
       SELECT c.relname, c.reltuples
       FROM pg_class c
@@ -109,7 +115,6 @@ Lab Instructions
       prereq     |         7
       (11 rows)
       ```
-
 
   - **SQL code for creating large relations**
     - The file `largeRelationsInsertFile.sql` contains SQL insert statements for larger, randomly created relations for a truly strange university (since course titles and department names are chosen randomly).
