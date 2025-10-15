@@ -1,4 +1,12 @@
-Esse repositório contém minha versão de soluções para o livro **Sistema de Banco de Dados, 7a Edição (A. Silberschatz, H. Korth, S. Sudarshan)** (SBD).
+# WIP
+
+## Autores
+
+- Lucas Cavalcante <lucascpcavalcante@gmail.com>
+
+## Descrição
+
+Esse repositório contém minha versão de soluções para o livro **[Sistema de Banco de Dados, 7a Edição](https://www.db-book.com/) (A. Silberschatz, H. Korth, S. Sudarshan)** (SBD).
 
 Espero que esse material chegue até estudantes e tutores de graduação e pós graduação que estejam cursando ou lecionande disciplinas relacionadas a Sistemas de Bancos de Dados.
 
