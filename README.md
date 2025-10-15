@@ -1,4 +1,4 @@
-# WIP
+# WIP!
 
 ## Autores
 
@@ -15,6 +15,8 @@ Meu objetivo é que esse material sirva de complemento em português ao SBD. Nat
 Muitas respostas são diferentes da versão das soluções disponibilizadas em inglês. Algumas vezes, trata-se de preferência. Em outras, acredito que há erros na versão original. Deixarei ao leitor decidir. Em todo caso, estejam avisados e alertados.
 
 Em caso de dúvidas, correções, ou sugestões, não exite em abrir uma issue ou um PR nesse repositório, ou entrar em contato por email: <lucascpcavalcante@gmail.com>
+
+Bons estudos!
 
 ---
 
