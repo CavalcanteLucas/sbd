@@ -17,29 +17,14 @@ Em caso de dúvidas, correções, ou sugestões, não exite em abrir uma issue o
 
 Bons estudos!
 
-## Status
-
-Com base nas **Notas ao professor** encontradas no **Prefácio** do SBD, escolhi dividir o plano de estudos do curso em duas partes. A ordem apresentada aqui é ligeiramente diferente da ordem apresentada [pela editora](https://www.db-book.com/teaching_material-dir/syllabi-dir/two-semester.html).
-
 **R**: read; **W**: write; **A**: answer; **T**: transcript
 
-### Parte 1
 
-|||
-|-|-|
-|PAGES|376|
-|READ|199|
-||52.92%|
-
-|||
-|-|-|
-|QUESTIONS|376|
-|WRITTEN|122|
-||38.36%|
-|ANSWERED|35|
-||11.00%|
+### Parte 0 -- OK
 
 #### Chap 1 -- OK (R/W/A/T) -- 15/15
+
+### Parte 1
 
 #### Chap 2 -- OK (R/W/A/T) -- 18/18
 
@@ -47,13 +32,17 @@ Com base nas **Notas ao professor** encontradas no **Prefácio** do SBD, escolhi
 
 |3.1|3.2|3.3|3.4|3.5|3.6|3.7|3.8|3.9|3.10|3.11|3.12|3.13|3.14|3.15|3.16|3.17|3.18|3.19|3.20|3.21|3.22|3.23|3.24|3.25|3.26|3.27|3.28|3.29|3.30|3.31|3.32|3.33|3.34|3.35|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|OK|OK|OK|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|Ws|W|W|W|W|W|W|W|W|W|W|W|W|
+|OK|OK|OK|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|
 
 #### Chap 4 -- OK (R/W/T)
 
 |4.1|4.2|4.3|4.4|4.5|4.6|4.7|4.8|4.9|4.10|4.11|4.12|4.13|4.14|4.15|4.16|4.17|4.18|4.19|4.20|4.21|4.22|4.23|4.24|4.25|4.26|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|
+
+#### Chap 5
+
+### Parte 2
 
 #### Chap 6 -- OK (R/W/T)
 
@@ -67,18 +56,21 @@ Com base nas **Notas ao professor** encontradas no **Prefácio** do SBD, escolhi
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
+### Parte 3
+
 #### Chap 8 -- OK (R)
 
 |8.1|8.2|8.3|8.4|8.5|8.6|8.7|8.8|8.9|8.10|8.11|8.12|8.13|8.14|8.15|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
-
 #### Chap 9
 
 |9.1|9.2|9.3|9.4|9.5|9.6|9.7|9.8|9.9|9.10|9.11|9.12|9.13|9.14|9.15|9.16|9.17|9.18|9.19|9.20|9.21|9.22|9.23|9.24|9.25|9.26|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
+### Parte 4
 
 #### Chap 10
 
@@ -92,6 +84,10 @@ Com base nas **Notas ao professor** encontradas no **Prefácio** do SBD, escolhi
 |-|-|-|-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|-|-|-|
 
+### Parte 5
+
+#### Chap 12
+
 #### Chap 13
 
 |13.1|13.2|13.3|13.4|13.5|13.6|13.7|13.8|13.9|13.10|13.11|13.12|13.13|13.14|
@@ -104,11 +100,25 @@ Com base nas **Notas ao professor** encontradas no **Prefácio** do SBD, escolhi
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
+### Parte 6
+
+#### Chap 15
+
+#### Chap 16
+
+### Parte 7
+
 #### Chap 17
 
 |17.1|17.2|17.3|17.4|17.5|17.6|17.7|17.8|17.9|17.10|17.11|17.12|17.13|17.14|17.15|17.16|17.17|17.18|17.19|17.20|17.21|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
+#### Chap 18
+
+#### Chap 19
+
+### Parte 8
 
 #### Chap 20
 
@@ -116,13 +126,12 @@ Com base nas **Notas ao professor** encontradas no **Prefácio** do SBD, escolhi
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
-### Parte 2
+#### Chap 21
+#### Chap 22
+#### Chap 23
 
-|||
-|-|-|
-|PAGES|?|
-|READ|0|
-||00.00%|
+
+### Parte 9
 
 |||
 |-|-|
@@ -132,20 +141,8 @@ Com base nas **Notas ao professor** encontradas no **Prefácio** do SBD, escolhi
 |ANSWERED|0|
 ||00.00%|
 
-#### Chap 27 (online)
-#### Chap 5
-#### Chap 28 (online)
-#### Chap 29 (online)
-#### Chap 31 (online)
-#### Chap 32 (online) -- OK(R)
-#### Chap 15
-#### Chap 16
-#### Chap 18
 #### Chap 24
 #### Chap 25
-#### Chap 21
-#### Chap 22
-#### Chap 23
 
 ## Autores
 
