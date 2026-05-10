@@ -4,7 +4,6 @@ Esse repositório contém minha versão de soluções para o livro **[Sistema de
 
 ![SBD](cover.png)
 
-
 ## Apresentação
 
 Espero que esse material chegue até estudantes e tutores de graduação e pós graduação que estejam cursando ou lecionande disciplinas relacionadas a Sistemas de Bancos de Dados.
@@ -18,7 +17,6 @@ Em caso de dúvidas, correções, ou sugestões, não exite em abrir uma issue o
 Bons estudos!
 
 **R**: read; **W**: write; **A**: answer; **T**: transcript
-
 
 ### Parte 0 -- OK
 
