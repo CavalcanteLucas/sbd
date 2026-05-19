@@ -8,11 +8,11 @@ Esse repositório contém minha versão de soluções para o livro **[Sistema de
 
 Espero que esse material chegue até estudantes e tutores de graduação e pós graduação que estejam cursando ou lecionande disciplinas relacionadas a Sistemas de Bancos de Dados.
 
-Meu objetivo é que esse material sirva de complemento em português ao SBD. Naturalmente, muitos termos estão em inglês, sobretudo graças ao fato que os nomes de tabelas e colunas do material de laboratório estão em inglês - quem sabe um trabalho de tradução posterior para o autor ou para futuros mantenedores `;)`.
+Meu objetivo é que esse material sirva de complemento em português ao SBD. Naturalmente, muitos termos estão em inglês, sobretudo graças ao fato que os nomes de tabelas e colunas do material de laboratório estão em inglês - quem sabe um trabalho de tradução posterior para o autor ou para futuros apoiadores `;)`.
 
-Muitas respostas são diferentes da versão das soluções disponibilizadas em inglês. Algumas vezes, trata-se de preferência. Em outras, acredito que há erros na versão original. Deixarei ao leitor decidir. Em todo caso, estejam avisados e alertados.
+Muitas respostas são diferentes da versão das soluções disponibilizadas em inglês. Em algumas vezes, trata-se de preferência. Em outras, acredito que há erros na versão original. Deixarei ao leitor decidir. Em todo caso, estejam alertados!
 
-Em caso de dúvidas, correções, ou sugestões, não exite em abrir uma issue ou um PR nesse repositório, ou entrar em contato por email: <lucascpcavalcante@gmail.com>
+Em caso de dúvidas, correções, ou sugestões, por favor abra uma issue ou um PR nesse repositório.
 
 Bons estudos!
 
