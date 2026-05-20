@@ -78,9 +78,10 @@ delete from seguro.pessoa cascade;
 select * from seguro.pessoa;
 insert into seguro.pessoa (id_motorista, nome, endereco) values
 ('11111', 'Lucas', 'Rua A'),
-('11222', 'Maria', 'Rua B'),
-('11333', 'Carla', 'Rua C'),
-('12345', 'Pedro', 'Rua D');
+('11112', 'Maria', 'Rua B'),
+('11113', 'Carla', 'Rua C'),
+('12345', 'Pedro', 'Rua D'),
+('22222', 'Pedro', 'Rua E');
 
 delete from seguro.carro cascade;
 select * from seguro.carro;
@@ -95,54 +96,24 @@ select * from seguro.acidente;
 insert into seguro.acidente (num_sinistro, ano, local) values
 ('S001', 2016, 'Centro'),
 ('S002', 2016, 'BairroA'),
-('S003', 2017, 'Centro');
+('S003', 2017, 'Centro'),
+('S004', 2017, 'Centro');
 
 delete from seguro.possui cascade;
 select * from seguro.possui;
 insert into seguro.possui (id_motorista, renavam) values
 ('11111', 'R001'),
-('11222', 'R002'),
-('11333', 'R003'),
+('11111', 'R002'),
+('11113', 'R003'),
 ('12345', 'R004');
 
 delete from seguro.participou cascade;
 select * from seguro.participou;
 insert into seguro.participou (num_sinistro, renavam, id_motorista, valor_dano) values
 ('S001', 'R001', '11111', 1500.00),
-('S001', 'R002', '11222', 2200.00),
-('S002', 'R003', '11333', 5000.00),
+('S001', 'R002', '11112', 2200.00),
+('S002', 'R003', '11113', 5000.00),
 ('S003', 'R001', '11111', 300.00),
-('S003', 'R002', '11222', 950.00);
-
--- a
-
--- select
---   distinct pe.id_motorista
--- from seguro.pessoa pe
--- join seguro.possui po
---   on pe.id_motorista = po.id_motorista;
-
-select
-  distinct pe.id_motorista
-from seguro.pessoa pe
-join seguro.participou pa
-  on pe.id_motorista = pa.id_motorista
-join seguro.acidente ac
-  on ac.num_sinistro = pa.num_sinistro
-where ano = '2017';
-
--- select
---   pe.id_motorista,
---   po.id_motorista,
---   pa.id_motorista
--- from seguro.pessoa pe
--- join seguro.possui po
---  on po.id_motorista = po.id_motorista
--- join seguro.participou pa
---   on pa.id_motorista = pe.id_motorista
--- join seguro.acidente a
---  on a.num_sinistro = pa.num_sinistro
--- where ano = 2017
-
--- b
-
+('S003', 'R002', '22222', 950.00),
+('S004', 'R003', '11111', 300.00),
+('S004', 'R004', '12345', 950.00);
