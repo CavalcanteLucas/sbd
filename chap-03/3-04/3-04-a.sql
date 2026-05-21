@@ -1,4 +1,4 @@
-select distinct po.id_motorista
+select count(distinct po.id_motorista)
 from seguro.possui po
 join seguro.participou pa
   on po.renavam = pa.renavam

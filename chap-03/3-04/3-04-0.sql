@@ -1,77 +1,62 @@
-drop schema if exists seguro cascade;
-create schema if not exists seguro;
+-- Banco de dados de seguro (Figura 3.17)
 
-drop table if exists seguro.pessoa cascade;
-create table if not exists seguro.pessoa();
-alter table if exists seguro.pessoa
-  add column if not exists id_motorista varchar(10),
-  add column if not exists nome varchar(10),
-  add column if not exists endereco varchar(10);
+drop schema if exists seguro cascade;
+create schema seguro;
+
+create table seguro.pessoa();
 alter table seguro.pessoa
-  drop constraint if exists pessoa_pk cascade;
+  add column id_motorista varchar(10),
+  add column nome varchar(10),
+  add column endereco varchar(10);
 alter table seguro.pessoa
   add constraint pessoa_pk primary key (id_motorista);
 
-drop table if exists seguro.carro cascade;
-create table if not exists seguro.carro();
-alter table if exists seguro.carro
-  add column if not exists renavam varchar(10),
-  add column if not exists modelo varchar(10),
-  add column if not exists ano varchar(4);
+create table seguro.carro();
 alter table seguro.carro
-  drop constraint if exists carro_pk cascade;
+  add column renavam varchar(10),
+  add column modelo varchar(10),
+  add column ano varchar(4);
 alter table seguro.carro
   add constraint carro_pk primary key (renavam);
 
-drop table if exists seguro.acidente;
-create table if not exists seguro.acidente();
-alter table if exists seguro.acidente
-  add column if not exists num_sinistro varchar(10),
-  add column if not exists ano int,
-  add column if not exists local varchar(10);
+create table seguro.acidente();
 alter table seguro.acidente
-  drop constraint if exists acidente_pk cascade;
+  add column num_sinistro varchar(10),
+  add column ano int,
+  add column local varchar(10);
 alter table seguro.acidente
   add constraint acidente_pk primary key (num_sinistro);
 
-drop table if exists seguro.possui cascade;
-create table if not exists seguro.possui();
-alter table if exists seguro.possui
-  add column if not exists id_motorista varchar(10),
-  add column if not exists renavam varchar(10);
+create table seguro.possui();
 alter table seguro.possui
-  drop constraint if exists possui_pk cascade;
+  add column id_motorista varchar(10),
+  add column renavam varchar(10);
 alter table seguro.possui
   add constraint possui_pk primary key (id_motorista, renavam);
-alter table seguro.possui
-  drop constraint if exists carro_fk cascade;
 alter table seguro.possui
   add constraint carro_fk foreign key (renavam)
   references seguro.carro (renavam)
   on delete cascade;
 alter table seguro.possui
-  drop constraint if exists pessoa_fk cascade;
-alter table seguro.possui
   add constraint pessoa_fk foreign key (id_motorista)
   references seguro.pessoa (id_motorista)
   on delete cascade;
 
-drop table if exists seguro.participou cascade;
-create table if not exists seguro.participou();
-alter table if exists seguro.participou
-  add column if not exists num_sinistro varchar(10),
-  add column if not exists renavam varchar(10),
-  add column if not exists id_motorista varchar(10),
-  add column if not exists valor_dano decimal(6,2);
+create table seguro.participou();
 alter table seguro.participou
-  drop constraint if exists participou_pk cascade;
+  add column num_sinistro varchar(10),
+  add column renavam varchar(10),
+  add column id_motorista varchar(10),
+  add column valor_dano decimal(6,2);
 alter table seguro.participou
   add constraint participou_pk primary key (num_sinistro, renavam);
 alter table seguro.participou
-  drop constraint if exists pessoa_fk cascade;
-alter table seguro.participou
   add constraint pessoa_fk foreign key (id_motorista)
   references seguro.pessoa (id_motorista)
+  on delete cascade;
+alter table seguro.participou
+  add constraint carro_fk foreign key (renavam)
+  references seguro.carro (renavam)
   on delete cascade;
 
 delete from seguro.pessoa cascade;

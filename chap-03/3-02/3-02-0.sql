@@ -1,3 +1,5 @@
+-- Relação nota_pontos
+
 drop table if exists nota_pontos;
   
 create table if not exists nota_pontos (
@@ -20,4 +22,3 @@ insert into nota_pontos (grade, points) values
   ('E-', 0.3),
   ('F', 0.0);
 
-select * from nota_pontos
