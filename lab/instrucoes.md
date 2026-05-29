@@ -8,25 +8,25 @@
 
 ### Configure PostgreSQL
 
-  - Using Docker is preferred for beginners due to simplicity
-    - Install and configure Docker
-    - Fetch PostgreSQL image and verify it has been downloaded successfully:
+  - Utilizar *Docker* é preferível, sobretudo para para iniciantes, graças à simplicidade
+    - Instale e configure o *Docker*
+    - Baixe a imagem do *PostgreSQL*:
       ```
       docker pull postgres
       docker images
       ```
-    - Execute container:
+    - Execute o container:
       ```
       docker run -p 5432:5432 -v <projeto>/lab/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=1234 postgres
       ```
-      Optionally, add flag `-d` for running it in the background.
+      Opcionalmente, adicione a flag `-d` para executar o processo no background.
 
-    - Connect to database:
+    - Conecte-se ao banco de dados:
       ```
       PGPASSWORD=1234 psql -h localhost -p 5432 -U postgres -d postgres
       ```
 
-  - **Optionally** connect via UI:
+  - **Opcionalmente**, conecte-se via UI:
     - When connected on CLI, create role to allow UI to connect with the DB:
       ```
       CREATE ROLE postgres WITH LOGIN SUPERUSER PASSWORD '1234';

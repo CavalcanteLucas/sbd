@@ -2,19 +2,21 @@
 
 Esse repositório contém minha versão de soluções para o livro **[Sistema de Banco de Dados, 7a Edição](https://www.db-book.com/) (A. Silberschatz, H. Korth, S. Sudarshan)** (SBD).
 
-![SBD](cover.png)
+![SBD](img/cover.png)
 
 ## Apresentação
 
-Espero que esse material chegue até estudantes e tutores de graduação e pós graduação que estejam cursando ou lecionande disciplinas relacionadas a Sistemas de Bancos de Dados.
+Espero que esse material chegue até estudantes e tutores de graduação e pós graduação que estejam cursando ou lecionando disciplinas relacionadas a Sistemas de Bancos de Dados.
 
 Meu objetivo é que esse material sirva de complemento em português ao SBD. Naturalmente, muitos termos estão em inglês, sobretudo graças ao fato que os nomes de tabelas e colunas do material de laboratório estão em inglês - quem sabe um trabalho de tradução posterior para o autor ou para futuros apoiadores `;)`.
 
-Muitas respostas são diferentes da versão das soluções disponibilizadas em inglês. Em algumas vezes, trata-se de preferência. Em outras, acredito que há erros na versão original. Deixarei ao leitor decidir. Em todo caso, estejam alertados!
+Muitas respostas estão diferentes da versão das soluções disponibilizadas em inglês. Em algumas vezes, trata-se de preferência. Em outras, acredito que há erros na versão original. Deixarei ao leitor decidir. Em todo caso, estejam alertados!
 
 Em caso de dúvidas, correções, ou sugestões, por favor abra uma issue ou um PR nesse repositório.
 
 Bons estudos!
+
+[![dangerous](img/dangerous.png)](https://www.youtube.com/watch?v=HTt_k-vdL4c)
 
 ## Progresso
 
@@ -39,6 +41,10 @@ Bons estudos!
 |-|-|-|-|-|-|-|-|-|-|-|-|-|
 
 #### Chap 5 - 0/11
+
+|5.1|5.2|5.3|5.4|5.5|5.6|5.7|5.8|5.9|5.10|5.11|
+|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|
 
 ### Parte 2
 
@@ -86,6 +92,10 @@ Bons estudos!
 
 #### Chap 12 - 0/7
 
+|12.1|12.2|12.3|12.4|12.5|12.6|12.7|
+|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|
+
 #### Chap 13 - 0/8
 
 |13.1|13.2|13.3|13.4|13.5|13.6|13.7|13.8|13.9|13.10|13.11|13.12|13.13|13.14|
@@ -102,7 +112,15 @@ Bons estudos!
 
 #### Chap 15 - 0/16
 
+|15.1|15.2|15.3|15.4|15.5|15.6|15.7|15.8|15.9|15.10|15.11|15.12|15.13|15.14|15.15|15.16|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
 #### Chap 16 - 0/15
+
+|16.1|16.2|16.3|16.4|16.5|16.6|16.7|16.8|16.9|16.10|16.11|16.12|16.13|16.14|16.15
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
 ### Parte 7
 
@@ -114,7 +132,15 @@ Bons estudos!
 
 #### Chap 18 - 0/16
 
+|18.1|18.2|18.3|18.4|18.5|18.6|18.7|18.8|18.9|18.10|18.11|18.12|18.13|18.14|18.15|18.16|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
 #### Chap 19 - 0/13
+
+|19.1|19.2|19.3|19.4|19.5|19.6|19.7|19.8|19.9|19.10|19.11|19.12|19.13|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
 ### Parte 8
 
@@ -126,15 +152,35 @@ Bons estudos!
 
 #### Chap 21 - 0/8
 
+|21.1|21.2|21.3|21.4|21.5|21.6|21.7|21.8|
+|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|
+
 #### Chap 22 - 0/11
 
+|22.1|22.2|22.3|22.4|22.5|22.6|22.7|22.8|22.9|22.10|22.11|
+|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|
+
 #### Chap 23 - 0/13
+
+|23.1|23.2|23.3|23.4|23.5|23.6|23.7|23.8|23.9|23.10|23.11|23.12|23.13|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
 ### Parte 9
 
 #### Chap 24 - 0/9
 
+|24.1|24.2|24.3|24.4|24.5|24.6|24.7|24.8|24.9|
+|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|
+
 #### Chap 25 - 0/9
+
+|25.1|25.2|25.3|25.4|25.5|25.6|25.7|25.8|25.9|
+|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|
 
 |||
 |-|-|
