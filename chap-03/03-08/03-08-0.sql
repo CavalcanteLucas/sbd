@@ -1,12 +1,6 @@
--- drop table agencia;
--- drop table cliente;
--- drop table emprestimo;
--- drop table tomador;
--- drop table depositante;
-
 drop schema if exists agencia_bancaria cascade;
 
-create schema agencia_bancaria
+create schema agencia_bancaria;
 
 -- drop table agencia_bancaria.agencia cascade;
 create table agencia_bancaria.agencia (
@@ -32,6 +26,7 @@ create table agencia_bancaria.emprestimo (
   foreign key (nome_agencia) references agencia_bancaria.agencia (nome_agencia)
 );
 
+-- drop table agencia_bancaria.tomador
 create table agencia_bancaria.tomador (
   id varchar(10),
   numero_emprestimo varchar(10),
@@ -49,6 +44,7 @@ create table agencia_bancaria.conta (
   foreign key (nome_agencia) references agencia_bancaria.agencia (nome_agencia)
 );
 
+-- drop table agencia_bancaria.depositante
 create table agencia_bancaria.depositante (
   id varchar(10),
   numero_conta varchar(10),
@@ -57,13 +53,13 @@ create table agencia_bancaria.depositante (
   foreign key (numero_conta) references agencia_bancaria.conta (numero_conta)
 );
 
-delete from agencia_bancaria.agencia;
+-- delete from agencia_bancaria.agencia cascade;
 insert into agencia_bancaria.agencia values
   ('A01', 'Caruaru', 100000.00),
   ('A14', 'Caruaru', 200000.00),
   ('A02', 'Recife', 150000.00),
   ('A03', 'Belo Jardim', 125000.00);
-select * from agencia_bancaria.agencia;
+-- select * from agencia_bancaria.agencia;
 
 insert into agencia_bancaria.cliente values
   ('12339', 'Lucas', 'Rua Ademar', 'Caruaru'),
@@ -75,7 +71,7 @@ insert into agencia_bancaria.cliente values
   ('12344', 'Judas', 'Rua Epaminondas', 'Belo Jardim'),
   ('20002', 'Tiago', 'Rua Jarbas', 'Caruaru'),
   ('12345', 'Beto', 'Rua Epaminondas', 'Belo Jardim');
-select * from agencia_bancaria.cliente;
+-- select * from agencia_bancaria.cliente;
   
 insert into agencia_bancaria.emprestimo values
   ('E01', 'A01', 100.00),
@@ -85,7 +81,7 @@ insert into agencia_bancaria.emprestimo values
   ('E05', 'A02', 350.00),
   ('E06', 'A03', 401.00),
   ('E07', 'A03', 501.00);
-select * from agencia_bancaria.emprestimo;
+-- select * from agencia_bancaria.emprestimo;
 
 insert into agencia_bancaria.tomador values
   ('12339', 'E01'),
@@ -95,7 +91,7 @@ insert into agencia_bancaria.tomador values
   ('12342', 'E05'),
   ('12339', 'E06'),
   ('12343', 'E07');
-select * from agencia_bancaria.tomador;
+-- select * from agencia_bancaria.tomador;
 
 insert into agencia_bancaria.conta values
   ('C01', 'A01', 1000),
@@ -108,7 +104,7 @@ insert into agencia_bancaria.conta values
   ('C07', 'A03', 5113),
   ('C08', 'A02', 6009),
   ('C22', 'A14', 6500);
-select * from agencia_bancaria.conta;
+-- select * from agencia_bancaria.conta;
 
 insert into agencia_bancaria.depositante values
   ('12339', 'C01'),
@@ -121,4 +117,4 @@ insert into agencia_bancaria.depositante values
   ('12345', 'C07'),
   ('20001', 'C08'),
   ('20001', 'C22');
-select * from agencia_bancaria.depositante;
+-- select * from agencia_bancaria.depositante;

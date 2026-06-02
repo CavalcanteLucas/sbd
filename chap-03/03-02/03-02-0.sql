@@ -1,5 +1,3 @@
--- Relação nota_pontos
-
 drop table if exists nota_pontos;
   
 create table if not exists nota_pontos (

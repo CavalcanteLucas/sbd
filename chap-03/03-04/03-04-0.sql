@@ -1,4 +1,4 @@
--- Banco de dados de seguro (Figura 3.17)
+-- banco de dados de seguro (Figura 3.17)
 
 drop schema if exists seguro cascade;
 create schema seguro;

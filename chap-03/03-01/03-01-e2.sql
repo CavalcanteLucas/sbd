@@ -1,9 +1,3 @@
-select t.course_id, t.sec_id, count(id) as takers
-from takes t
-where semester = 'Fall' and year = '2017'
-group by course_id, t.sec_id
-order by takers desc
-  
 select s.course_id, s.sec_id,
   (select count(*)
    from takes t
