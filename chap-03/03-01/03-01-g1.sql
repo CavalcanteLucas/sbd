@@ -1,7 +1,5 @@
-select
-  max(takers)
-from
-  (
+with
+  enrollment (course_id, sec_id, takers) as (
     select
       t.course_id,
       t.sec_id,
@@ -14,6 +12,18 @@ from
         and year = '2017'
       )
     group by
-      course_id,
+      t.course_id,
       t.sec_id
+  )
+select
+  e.course_id,
+  e.sec_id
+from
+  enrollment e
+where
+  takers = (
+    select
+      max(takers)
+    from
+      enrollment
   );

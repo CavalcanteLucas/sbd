@@ -5,14 +5,19 @@ with
       t.sec_id,
       count(id) as takers
     from
-      takes t
+      takes as t,
+      section as s
     where
       (
-        semester = 'Fall'
-        and year = '2017'
+        t.semester = 'Fall'
+        and t.year = '2017'
+        and t.semester = s.semester
+        and t.year = s.year
+        and t.sec_id = s.sec_id
+        and t.course_id = s.course_id
       )
     group by
-      course_id,
+      t.course_id,
       t.sec_id
   )
 select
