@@ -1,5 +1,5 @@
 select
-    coalesce(sum(n.points * c.credits), 0) as creditos
+    sum(n.points * c.credits) as creditos
 from
     takes as t,
     nota_pontos as n,
@@ -8,5 +8,5 @@ where
     (
         t.grade = n.grade
         and t.course_id = c.course_id
-        and t.id = '98988'
+        and t.id = '70557'
     );
