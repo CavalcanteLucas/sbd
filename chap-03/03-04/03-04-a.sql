@@ -1,5 +1,5 @@
-select distinct
-  po.id_motorista
+select
+  count(distinct po.id_motorista)
 from
   seguro.possui as po,
   seguro.participou as pa,
