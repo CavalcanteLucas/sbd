@@ -1,2 +1,4 @@
-select max(salary)
-from instructor
+select
+    max(salary)
+from
+    instructor;

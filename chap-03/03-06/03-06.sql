@@ -1,3 +1,6 @@
-select *
-from department
-where lower(dept_name) like '%sci%'
+select
+    *
+from
+    department
+where
+    lower(dept_name) like '%sci%';

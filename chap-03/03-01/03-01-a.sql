@@ -1,3 +1,6 @@
-select title
-from course
-where credits=3;
+select
+    title
+from
+    course
+where
+    credits = 3;

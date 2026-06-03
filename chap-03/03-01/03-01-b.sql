@@ -1,6 +1,15 @@
-select distinct s.id
-from student s
-join takes t on s.id = t.id
-join teaches tt on t.course_id = tt.course_id
-join instructor i on tt.id = i.id
-where i.name = 'Einstein'
+select distinct
+    s.id
+from
+    student as s,
+    takes as ta,
+    teaches as te,
+    instructor i
+where
+    (
+        s.id = ta.id
+        and ta.course_id = te.course_id
+        and ta.sec_id = te.sec_id
+        and ta.semester = te.semester
+        and i.name like 'Einstein'
+    );

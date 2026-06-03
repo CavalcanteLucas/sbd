@@ -1,3 +1,6 @@
-select * 
-from instructor
-where dept_name = 'Comp. Sci.'
+select
+    *
+from
+    instructor
+where
+    dept_name = 'Comp. Sci.';

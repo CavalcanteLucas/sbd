@@ -1,7 +1,12 @@
-select count(distinct po.id_motorista)
-from seguro.possui po
-join seguro.participou pa
-  on po.renavam = pa.renavam
-join seguro.acidente ac
-  on ac.num_sinistro = pa.num_sinistro
-where ac.ano = 2017;
+select distinct
+  po.id_motorista
+from
+  seguro.possui as po,
+  seguro.participou as pa,
+  seguro.acidente as ac
+where
+  (
+    ac.ano = 2017
+    and ac.num_sinistro = pa.num_sinistro
+    and pa.renavam = po.renavam
+  );

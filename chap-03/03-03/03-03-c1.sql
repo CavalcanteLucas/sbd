@@ -1,3 +1,6 @@
-select *
-from student
-where tot_cred > 100
+select
+  *
+from
+  student
+where
+  tot_cred > 100;

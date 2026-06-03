@@ -1,11 +1,14 @@
 drop table if exists nota_pontos;
-  
-create table if not exists nota_pontos (
-  grade varchar(2) primary key,
-  points decimal(3,2)
-);
 
-insert into nota_pontos (grade, points) values
+create table
+  if not exists nota_pontos (
+    grade varchar(2) primary key,
+    points decimal(3, 2)
+  );
+
+insert into
+  nota_pontos (grade, points)
+values
   ('A', 4.0),
   ('A-', 3.7),
   ('B+', 3.3),
@@ -19,4 +22,3 @@ insert into nota_pontos (grade, points) values
   ('E', 0.7),
   ('E-', 0.3),
   ('F', 0.0);
-
