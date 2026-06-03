@@ -1,0 +1,15 @@
+- review:
+  - 03-01-e
+  - 03-01-f
+  - 03-01-g
+  - 03-02
+    - review answer
+    - enforce sql patterns
+  - 03-03
+  - 03-04
+  - 03-05
+  - 03-07
+  - 03-08
+    - enforce sql patterns for all items
+    - improve answer for item a
+    - review answer for item c
