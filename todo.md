@@ -1,5 +1,4 @@
 - review:
-  - 03-05
   - 03-07
   - 03-08
     - enforce sql patterns for all items
