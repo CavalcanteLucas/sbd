@@ -2,10 +2,10 @@ select
   id
 from
   agencia_bancaria.cliente
-except
-(
-  select
-    id
-  from
-    agencia_bancaria.tomador
-);
+where
+  id not in (
+    select
+      id
+    from
+      agencia_bancaria.tomador t
+  );

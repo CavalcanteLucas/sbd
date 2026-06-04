@@ -1,5 +1,3 @@
-create view
-  misc.notas as
 select
   id,
   pontuacao,
