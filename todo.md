@@ -1,6 +1,0 @@
-- review:
-  - measure tasks
-    - create go script
-      - open each file (from chap 04 onwards)
-      - concat into a single file
-    - ask llm to provide weight for each task using t-shirt sizes (P, M, G, GG)
