@@ -1,0 +1,24 @@
+services:
+
+  postgres-small:
+    image: postgres
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+    volumes:
+      - ./pgdata-small:/var/lib/postgresql/data
+      - ./DDL.sql:/docker-entrypoint-initdb.d/01-DDL.sql
+      - ./smallRelationsInsertFile.sql:/docker-entrypoint-initdb.d/02-data.sql
+
+  postgres-large:
+    image: postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+    volumes:
+      - ./pgdata-large:/var/lib/postgresql/data
+      - ./DDL.sql:/docker-entrypoint-initdb.d/01-DDL.sql
+      - ./largeRelationsInsertFile.sql:/docker-entrypoint-initdb.d/02-data.sql
+
