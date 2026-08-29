@@ -1,0 +1,21 @@
+dbt_:
+  outputs:
+    small:
+      dbname: postgres
+      host: localhost
+      pass: '1234'
+      port: 5432
+      schema: answers
+      threads: 1
+      type: postgres
+      user: postgres
+
+    large:
+      dbname: postgres
+      host: localhost
+      pass: '1234'
+      port: 5432
+      schema: answers
+      threads: 1
+      type: postgres
+      user: postgres
