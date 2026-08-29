@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: 03-01-a
+    columns:
+      - name: title
+
+
+  - name: 03-01-a
+    columns:
+      - name: id

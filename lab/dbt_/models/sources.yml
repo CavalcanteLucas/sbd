@@ -1,0 +1,72 @@
+version: 2
+
+sources:
+  - name: uni
+    schema: public
+    tables:
+      - name: advisor
+        tests:
+          - check_row_count:
+              arguments:
+                small: 9
+                large: 2000
+      - name: classroom
+        tests:
+          - check_row_count:
+              arguments:
+                small: 5
+                large: 30
+      - name: course
+        tests:
+          - check_row_count:
+              arguments:
+                small: 13
+                large: 200
+      - name: department
+        tests:
+          - check_row_count:
+              arguments:
+                small: 7
+                large: 20
+      - name: instructor
+        tests:
+          - check_row_count:
+              arguments:
+                small: 12
+                large: 50
+      - name: prereq
+        tests:
+          - check_row_count:
+              arguments:
+                small: 7
+                large: 100
+      - name: section
+        tests:
+          - check_row_count:
+              arguments:
+                small: 15
+                large: 100
+      - name: student
+        tests:
+          - check_row_count:
+              arguments:
+                small: 13
+                large: 2000
+      - name: takes
+        tests:
+          - check_row_count:
+              arguments:
+                small: 22
+                large: 30000
+      - name: teaches
+        tests:
+          - check_row_count:
+              arguments:
+                small: 15
+                large: 100
+      - name: time_slot
+        tests:
+          - check_row_count:
+              arguments:
+                small: 20
+                large: 20

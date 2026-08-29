@@ -1,3 +1,8 @@
 /lab/dbbook
-/lab/pgdata
+/lab/pgdata*
 *.swp
+
+target/
+dbt_packages/
+logs/
+.env

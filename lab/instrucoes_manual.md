@@ -99,7 +99,7 @@ The sizes of the relations are as follows:
   course     |       200
   instructor |        50
   section    |       100
-  classroom  |         5
+  classroom  |        30
   teaches    |       100
   student    |      2000
   takes      |     30000

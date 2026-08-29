@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_PASSWORD: 1234
     volumes:
-      - ./pgdata-small:/var/lib/postgresql/data
+      - ./pgdata-small:/var/lib/postgresql
       - ./DDL.sql:/docker-entrypoint-initdb.d/01-DDL.sql
       - ./smallRelationsInsertFile.sql:/docker-entrypoint-initdb.d/02-data.sql
 
@@ -18,7 +18,7 @@ services:
     environment:
       POSTGRES_PASSWORD: 1234
     volumes:
-      - ./pgdata-large:/var/lib/postgresql/data
+      - ./pgdata-large:/var/lib/postgresql
       - ./DDL.sql:/docker-entrypoint-initdb.d/01-DDL.sql
       - ./largeRelationsInsertFile.sql:/docker-entrypoint-initdb.d/02-data.sql
 
