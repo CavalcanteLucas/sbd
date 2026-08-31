@@ -1,7 +1,5 @@
-/lab/dbbook
-/lab/pgdata*
+pgdata*
 *.swp
-
 target/
 dbt_packages/
 logs/

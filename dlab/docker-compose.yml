@@ -1,0 +1,31 @@
+services:
+
+  small:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+    volumes:
+      - ./init/pgdata-small:/var/lib/postgresql
+      - ./init/DDL.sql:/docker-entrypoint-initdb.d/01-DDL.sql
+      - ./init/smallRelationsInsertFile.sql:/docker-entrypoint-initdb.d/02-data.sql
+      - ./dbt_:/dbt_
+    entrypoint: ["./entrypoint.sh", "small"]
+
+  large:
+    image: postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+    volumes:
+      - ./init/pgdata-large:/var/lib/postgresql
+      - ./init/DDL.sql:/docker-entrypoint-initdb.d/01-DDL.sql
+      - ./init/largeRelationsInsertFile.sql:/docker-entrypoint-initdb.d/02-data.sql
+      - ./init/entrypoint.sh:/entrypoint.sh
+      - ./dbt_:/dbt_
+    entrypoint: ["./entrypoint.sh", "large"]
+

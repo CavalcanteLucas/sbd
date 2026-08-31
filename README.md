@@ -194,9 +194,4 @@ Veja instruções do laboratório de exercícios em `/lab/instrucoes.md`.
 
 #### TODO
 
-- automate dbt tests / run
-  - create entrypoint.sh for docker compose
-    - run:
-        for target in ('small', 'large'):
-            dbt test --target target
-            dbt run --target target
+- support poetry within containers
