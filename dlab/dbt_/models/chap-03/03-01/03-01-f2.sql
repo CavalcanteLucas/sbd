@@ -4,7 +4,7 @@ from
         select
             t.course_id,
             t.sec_id,
-            count(id) as takers
+            count(t.id) as takers
         from
             takes as t,
             section as s
@@ -20,4 +20,4 @@ from
         group by
             t.course_id,
             t.sec_id
-    )
+    ) as takers_

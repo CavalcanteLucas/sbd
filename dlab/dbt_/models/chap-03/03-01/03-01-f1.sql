@@ -15,4 +15,4 @@ from
         group by
             t.course_id,
             t.sec_id
-    )
+    ) as takers_

@@ -15,7 +15,7 @@ group by
 union
 select
     id,
-    0
+    0 as s_exists
 from
     student as s
 where

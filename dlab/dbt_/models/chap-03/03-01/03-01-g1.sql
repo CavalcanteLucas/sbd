@@ -26,7 +26,7 @@ from
     enrollment as e
 where
     e.takers = (
-        select max(takers)
+        select max(e_.takers)
         from
-            enrollment
+            enrollment as e_
     )

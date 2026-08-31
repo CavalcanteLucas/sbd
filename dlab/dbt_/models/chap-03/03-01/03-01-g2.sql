@@ -6,7 +6,7 @@ with enrollment (
     select
         t.course_id,
         t.sec_id,
-        count(id) as takers
+        count(t.id) as takers
     from
         takes as t,
         section as s
@@ -31,7 +31,7 @@ from
     enrollment as e
 where
     e.takers = (
-        select max(takers)
+        select max(e.takers)
         from
             enrollment
     )

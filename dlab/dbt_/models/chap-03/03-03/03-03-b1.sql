@@ -1,11 +1,11 @@
-select course_id
+select c.course_id
 from
-    course
+    course as c
 where
     (
-        course_id not in (
-            select course_id
+        c.course_id not in (
+            select s.course_id
             from
-                section
+                section as s
         )
     )

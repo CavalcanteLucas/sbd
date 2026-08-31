@@ -1,5 +1,9 @@
-select *
+select
+    s.id,
+    s.name,
+    s.dept_name,
+    s.tot_cred
 from
-    student
+    student as s
 where
-    tot_cred > 100
+    s.tot_cred > 100

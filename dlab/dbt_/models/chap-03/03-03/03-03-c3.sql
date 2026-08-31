@@ -1,7 +1,7 @@
 select
-    conname,
-    pg_get_constraintdef(oid)
+    pc.conname,
+    pc.pg_get_constraintdef(pc.oid) as pc_oid
 from
-    pg_constraint
+    pg_constraint as pc
 where
-    conname like 'instructor_salary_check'
+    pc.conname like 'instructor_salary_check'

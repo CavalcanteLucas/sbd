@@ -1,4 +1,5 @@
-select *
+select
+    *
 from
     seguro.carro as ca
 where
