@@ -194,4 +194,6 @@ Veja instruções do laboratório de exercícios em `/lab/instrucoes.md`.
 
 #### TODO
 
+- fix sqlfluff errors
+- set up macros for ddl questions
 - support poetry within containers
