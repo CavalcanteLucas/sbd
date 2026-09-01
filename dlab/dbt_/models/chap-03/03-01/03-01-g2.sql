@@ -25,13 +25,13 @@ with enrollment (
 )
 
 select
-    e.course_id,
-    e.sec_id
+    e_o.course_id,
+    e_o.sec_id
 from
-    enrollment as e
+    enrollment as e_o
 where
-    e.takers = (
-        select max(e.takers)
+    e_o.takers = (
+        select max(e_i.takers)
         from
-            enrollment
+            enrollment as e_i
     )

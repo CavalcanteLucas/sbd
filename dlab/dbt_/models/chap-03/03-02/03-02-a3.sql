@@ -1,7 +1,7 @@
 select coalesce(sum(n.points * c.credits), 0) as creditos
 from
     takes as t,
-    {{ ref('nota_pontos') }} as n,
+    nota_pontos as n,
     course as c
 where
     (

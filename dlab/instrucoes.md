@@ -30,6 +30,7 @@ docker compose exec -e HOME="/dbt_" -u "$(id -u):$(id -g)" small sqlfluff lint d
     - Para o banco maior, utilize:
       - port: `5433`
 
+Os resultados apresentados consideram os dados de amostragem fornecidos no *Apêndice A* (`lab/smallRelationsInsertFile.sql`).
 
 ## Instruções para configuração do laboratório (detalhado)
 
