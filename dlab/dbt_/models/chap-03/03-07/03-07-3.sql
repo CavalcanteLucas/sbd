@@ -1,0 +1,1 @@
+delete from misc.r2
