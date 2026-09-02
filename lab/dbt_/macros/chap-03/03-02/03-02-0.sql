@@ -1,7 +1,5 @@
 {% macro m_03_02_0() %}
     {% set sql_statement %}
-        drop table if exists nota_pontos;
-
         create table nota_pontos (
             grade varchar(2) primary key,
             points decimal(3, 2)

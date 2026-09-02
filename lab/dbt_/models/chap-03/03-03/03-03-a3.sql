@@ -2,7 +2,7 @@ select
     id,
     name,
     dept_name,
-    salary * 1.1 as salary
+    salary
 from
     instructor
 where

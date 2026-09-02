@@ -1,4 +1,4 @@
-{% macro m03_03_b2() %} -- passar: veja 03-03-b3.sql
+{% macro m_03_03_b2() %}
     {% set sql_statement %}
 delete from course
 where
@@ -11,7 +11,7 @@ where
 {% endset %}
     {{ execute_sql(
         sql_statement,
-        'm03_03_a2'
+        'm_03_03_a2'
     ) }}
 {% endmacro %}
 

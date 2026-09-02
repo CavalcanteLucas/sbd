@@ -1,4 +1,4 @@
-{% macro m03_03_a2() %} -- passar: veja 03-03-a3.sql
+{% macro m_03_03_a2() %}
     {% set sql_statement %}
 update
     instructor
@@ -8,6 +8,6 @@ where
 {% endset %}
     {{ execute_sql(
         sql_statement,
-        'm03_03_a2'
+        'm_03_03_a2'
     ) }}
 {% endmacro %}

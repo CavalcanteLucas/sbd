@@ -16,16 +16,42 @@ dbt_exec() {
 }
 
 
+# chap-03
+
+## 03-01 
 
 # dbt_run "chap-03.03-01"
 
-dbt_run "chap-03.03-03.03-03-c4"
-# dbt_exec "m03_03_c2"
+## 03-02
 
-
-# dbt_run "chap-03.03-01"
-
+# dbt_exec "m_03_02_0"
 # dbt_run "chap-03.03-02"
 
-# dbt_run "chap-03.03-03"
+## 03-03
+
+# dbt_run "chap-03.03-03.03-03-a1"
+# dbt_exec "m_03_03_a2"
+# dbt_run "chap-03.03-03.03-03-a3"
+# dbt_run "chap-03.03-03.03-03-b1"
+# dbt_exec "m_03_03_b2"
+# dbt_run "chap-03.03-03.03-03-b3"
+# dbt_run "chap-03.03-03.03-03-c1"
+# # dbt_exec "m_03_03_c2" -- passar: deve falhar!
+# dbt_run "chap-03.03-03.03-03-c3"
+
+## 03-04
+
+# dbt_exec "m_03_04_0"
+# dbt_run "chap-03.03-04.03-04-a
+#          chap-03.03-04.03-04-b1-i
+#          chap-03.03-04.03-04-b1-ii
+#          chap-03.03-04.03-04-b1-iii"
+# dbt_exec "m_03_04_b2"
+# dbt_run "chap-03.03-04.03-04-b3-i
+#          chap-03.03-04.03-04-b3-ii
+#          chap-03.03-04.03-04-b3-iii"
+
+## 03-05
+
+
 echo "Done!"

@@ -1,4 +1,4 @@
-{% macro m03_03_c2() %} -- passar: veja 03-03-c3.sql
+{% macro m_03_03_c2() %} -- passar: deve falhar!
     {% set sql_statement %}
 insert into
   instructor
@@ -14,6 +14,6 @@ where
 {% endset %}
     {{ execute_sql(
         sql_statement,
-        'm03_03_a2'
+        'm_03_03_a2'
     ) }}
 {% endmacro %}

@@ -1,9 +1,11 @@
-select *
+select c.course_id
 from
-    {{ ref('03-03-b1') }}
+    course as c
 where
-    course_id in (
-        select s.course_id
-        from
-            section as s
+    (
+        c.course_id not in (
+            select s.course_id
+            from
+                section as s
+        )
     )
