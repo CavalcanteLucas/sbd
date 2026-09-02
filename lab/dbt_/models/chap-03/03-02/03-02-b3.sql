@@ -7,5 +7,5 @@ where
     (
         n.grade = t.grade
         and c.course_id = t.course_id
-        and t.id = '12345'
+        and t.id = '98988'
     )
