@@ -16,11 +16,11 @@ dbt_exec() {
 }
 
 
-# dbt_exec "m_03_02_0"
-
 
 # dbt_run "chap-03.03-01"
-dbt_run "chap-03.03-03"
+
+dbt_run "chap-03.03-03.03-03-c4"
+# dbt_exec "m03_03_c2"
 
 
 # dbt_run "chap-03.03-01"

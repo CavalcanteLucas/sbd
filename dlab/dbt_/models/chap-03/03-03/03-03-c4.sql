@@ -1,6 +1,6 @@
 select *
 from
-    {{ ref('03-03-c1') }}
+    instructor
 union all
 select
     s.id,
