@@ -1,4 +1,4 @@
-<img width="1600" height="738" alt="image" src="https://github.com/user-attachments/assets/9542eb43-5796-4954-b175-8d76ca14a9a1" />## Descrição
+## Descrição
 
 Esse repositório contém minha versão de soluções para o livro **[Sistema de Banco de Dados, 7a Edição](https://www.db-book.com/) (A. Silberschatz, H. Korth, S. Sudarshan)** (SBD).
 
