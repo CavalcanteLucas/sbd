@@ -18,7 +18,7 @@ Bons estudos!
 
 ![dangerous](extra/img/dangerous.png)
 
-## Laboratório
+## Laboratório de Exercícios
 
 Veja instruções do laboratório de exercícios em [lab/instrucoes.md](lab/instrucoes.md).
 
