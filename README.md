@@ -20,7 +20,7 @@ Bons estudos!
 
 ## Laboratório
 
-Veja instruções do laboratório de exercícios em `/lab/instrucoes.md`.
+Veja instruções do laboratório de exercícios em [asdf](dlab/instrucoes.md).
 
 ## Progresso
 
