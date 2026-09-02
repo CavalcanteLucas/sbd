@@ -16,7 +16,7 @@ Em caso de dúvidas, correções, ou sugestões, por favor abra uma issue ou um 
 
 Bons estudos!
 
-[![dangerous](extra/img/dangerous.png)]
+![dangerous](extra/img/dangerous.png)
 
 ## Laboratório
 
