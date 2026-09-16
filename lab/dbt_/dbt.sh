@@ -51,10 +51,10 @@ build_chap_03() {
                 chap-03.03-04.03-04-b3-iii"
     }
 
-    build_chap_03_question_01
-    build_chap_03_question_02
-    build_chap_03_question_03
-    build_chap_03_question_04
+    # build_chap_03_question_01
+    # build_chap_03_question_02
+    # build_chap_03_question_03
+    # build_chap_03_question_04
 }
 
 
