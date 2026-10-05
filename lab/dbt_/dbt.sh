@@ -58,11 +58,16 @@ build_03() {
         dbt_run "chap-03.03-05.03-05-b2"
     }
 
+    build_03_06() {
+        dbt_run "chap-03.03-06.03-06"
+    }
+
     # build_03_01
     # build_03_02
     # build_03_03
     # build_03_04
-    build_03_05
+    # build_03_05
+    build_03_06
 }
 
 
