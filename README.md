@@ -26,7 +26,7 @@ Bons estudos!
 
 ### Inicialize os bancos de dados
 
-  - Execute:
+  - No diretório `./lab` Execute:
       ```
       docker compose up
       ```

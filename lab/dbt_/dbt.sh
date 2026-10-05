@@ -16,18 +16,18 @@ dbt_exec() {
 }
 
 
-build_chap_03() {
+build_03() {
 
-    build_chap_03_question_01() {
+    build_03_01() {
         dbt_run "chap-03.03-01"
     }
 
-    build_chap_03_question_02() {
+    build_03_02() {
         dbt_exec "m_03_02_0"
         dbt_run "chap-03.03-02"
     }
 
-    build_chap_03_question_03() {
+    build_03_03() {
         dbt_run "chap-03.03-03.03-03-a1"
         dbt_exec "m_03_03_a2"
         dbt_run "chap-03.03-03.03-03-a3
@@ -39,7 +39,7 @@ build_chap_03() {
         dbt_run "chap-03.03-03.03-03-c3"
     }
 
-    build_chap_03_question_04() {
+    build_03_04() {
         dbt_exec "m_03_04_0"
         dbt_run "chap-03.03-04.03-04-a
                 chap-03.03-04.03-04-b1-i
@@ -51,13 +51,23 @@ build_chap_03() {
                 chap-03.03-04.03-04-b3-iii"
     }
 
-    # build_chap_03_question_01
-    # build_chap_03_question_02
-    # build_chap_03_question_03
-    # build_chap_03_question_04
+    build_03_05() {
+        dbt_exec "m_03_05_0"
+        dbt_run "chap-03.03-05.03-05-a"
+        dbt_exec "m_03_05_b1"
+        dbt_run "chap-03.03-05.03-05-b2"
+    }
+
+    # build_03_01
+    # build_03_02
+    # build_03_03
+    # build_03_04
+    build_03_05
 }
 
 
-build_chap_03
+build_03
+
+
 
 echo "Done!"

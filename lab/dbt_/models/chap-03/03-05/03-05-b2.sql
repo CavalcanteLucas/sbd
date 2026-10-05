@@ -2,6 +2,6 @@ select
     nota,
     count(id) as n_count
 from
-    misc.notas
+    notas
 group by
     nota
