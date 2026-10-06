@@ -6,7 +6,7 @@ dbt_:
       host: localhost
       pass: '1234'
       port: 5432
-      schema: answers
+      schema: respostas
       threads: 1
       type: postgres
       user: postgres
@@ -16,7 +16,7 @@ dbt_:
       host: localhost
       pass: '1234'
       port: 5432
-      schema: answers
+      schema: respostas
       threads: 1
       type: postgres
       user: postgres

@@ -35,7 +35,7 @@ build_03() {
         dbt_exec "m_03_03_b2"
         dbt_run "chap-03.03-03.03-03-b3
                  chap-03.03-03.03-03-c1"
-        # dbt_exec "m_03_03_c2" -- passar: deve falhar!
+        # dbt_exec "m_03_03_c2" -- pular este caso: deve falhar!
         dbt_run "chap-03.03-03.03-03-c3"
     }
 
@@ -62,12 +62,20 @@ build_03() {
         dbt_run "chap-03.03-06.03-06"
     }
 
+    build_03_07() {
+        dbt_exec "m_03_07_1"
+        dbt_run "chap-03.03-07.03-07-2"
+        dbt_exec "m_03_07_3"
+        dbt_run "chap-03.03-07.03-07-4"
+    }
+
     # build_03_01
     # build_03_02
     # build_03_03
     # build_03_04
     # build_03_05
-    build_03_06
+    # build_03_06
+    build_03_07
 }
 
 
