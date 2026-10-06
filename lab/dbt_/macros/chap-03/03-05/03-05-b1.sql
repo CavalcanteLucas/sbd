@@ -1,6 +1,6 @@
 {% macro m_03_05_b1() %}
     {% set sql_statement %}
-        create or replace view notas as (
+        create or replace view universidade.notas as (
 
         select
             id,
@@ -12,7 +12,7 @@
                 else 'F'
             end as nota
         from
-            lancamentos
+            universidade.lancamentos
         );
 
     {% endset %}

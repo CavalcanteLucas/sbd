@@ -1,6 +1,6 @@
 select title
 from
-    course
+    universidade.course
 where
     (
         credits = 3

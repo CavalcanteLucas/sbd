@@ -3,9 +3,9 @@ select
         n.points * c.credits
     ) as creditos
 from
-    takes as t,
-    nota_pontos as n,
-    course as c
+    universidade.takes as t,
+    universidade.nota_pontos as n,
+    universidade.course as c
 where
     (
         t.grade = n.grade

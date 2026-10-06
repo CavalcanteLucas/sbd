@@ -8,4 +8,4 @@ select
         else 'F'
     end as nota
 from
-    lancamentos
+    universidade.lancamentos

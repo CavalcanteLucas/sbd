@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: uni
-    schema: public
+  - name: escola
+    schema: escola
     tables:
       - name: advisor
         tests:

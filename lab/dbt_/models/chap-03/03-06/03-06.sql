@@ -3,6 +3,6 @@ select
     building,
     budget
 from
-    department
+    universidade.department
 where
     lower(dept_name) like '%sci%'

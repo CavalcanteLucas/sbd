@@ -1,8 +1,8 @@
 select coalesce(sum(n.points * c.credits) / sum(c.credits), 0) as media
 from
-    takes as t,
-    nota_pontos as n,
-    course as c
+    universidade.takes as t,
+    universidade.nota_pontos as n,
+    universidade.course as c
 where
     (
         n.grade = t.grade

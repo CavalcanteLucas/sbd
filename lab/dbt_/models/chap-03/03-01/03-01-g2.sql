@@ -8,8 +8,8 @@ with enrollment (
         t.sec_id,
         count(t.id) as takers
     from
-        takes as t,
-        section as s
+        universidade.takes as t,
+        universidade.section as s
     where
         (
             t.semester = 'Fall'

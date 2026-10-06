@@ -1,13 +1,13 @@
 {% macro m_03_02_0() %}
     {% set sql_statement %}
-        drop table if exists nota_pontos;
+        drop table if exists universidade.nota_pontos;
 
-        create table nota_pontos (
+        create table universidade.nota_pontos (
             grade varchar(2) primary key,
             points decimal(3, 2)
         );
 
-        insert into nota_pontos (grade, points)
+        insert into universidade.nota_pontos (grade, points)
         values
             ('A', 4.0),
             ('A-', 3.7),

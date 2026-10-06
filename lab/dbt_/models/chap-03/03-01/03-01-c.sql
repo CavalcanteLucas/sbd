@@ -1,3 +1,3 @@
 select max(salary)
 from
-    instructor
+    universidade.instructor

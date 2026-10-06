@@ -1,10 +1,10 @@
 {% macro m_03_05_0() %}
     {% set sql_statement %}
-        drop table if exists lancamentos cascade;
+        drop table if exists universidade.lancamentos cascade;
 
-        create table lancamentos (id varchar(10), pontuacao integer);
+        create table universidade.lancamentos (id varchar(10), pontuacao integer);
 
-        insert into lancamentos (id, pontuacao)
+        insert into universidade.lancamentos (id, pontuacao)
         values
             ('111', 100),
             ('112', 3),

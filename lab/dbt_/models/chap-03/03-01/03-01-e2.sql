@@ -8,7 +8,7 @@ with section_ as (
         s.room_number,
         s.time_slot_id
     from
-        section as s
+        universidade.section as s
     union all
     select
         'BIO-101' as s_course_id,
@@ -26,7 +26,7 @@ select
     (
         select count(*)
         from
-            takes as t
+            universidade.takes as t
         where
             t.course_id = s.course_id
             and t.semester = s.semester

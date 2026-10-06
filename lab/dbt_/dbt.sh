@@ -100,21 +100,18 @@ build_03() {
         dbt_run "chap-03.03-10.03-10-b3"
     }
 
-    # build_03_01
-    # build_03_02
-    # build_03_03
-    # build_03_04
-    # build_03_05
-    # build_03_06
-    # build_03_07
-    # build_03_08
+    build_03_01
+    build_03_02
+    build_03_03
+    build_03_04
+    build_03_05
+    build_03_06
+    build_03_07
+    build_03_08
     build_03_09
     build_03_10
 }
 
-
 build_03
-
-
 
 echo "Done!"

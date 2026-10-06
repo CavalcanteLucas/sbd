@@ -1,9 +1,9 @@
 select distinct s.id
 from
-    student as s,
-    takes as ta,
-    teaches as te,
-    instructor as i
+    universidade.student as s,
+    universidade.takes as ta,
+    universidade.teaches as te,
+    universidade.instructor as i
 where
     (
         s.id = ta.id

@@ -2,6 +2,6 @@ select
     nota,
     count(id) as n_count
 from
-    notas
+    universidade.notas
 group by
     nota

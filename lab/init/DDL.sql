@@ -1,3 +1,7 @@
+create schema if not exists universidade;
+
+set search_path to universidade;
+
 create table
 	classroom (
 		building varchar(15),

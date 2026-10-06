@@ -19,3 +19,24 @@ clean-targets:
 models:
   dbt_:
     +materialized: table
+    chap-03:
+      03-01:
+        +schema: chap-03_question-01
+      03-02:
+        +schema: chap-03_question-02
+      03-03:
+        +schema: chap-03_question-03
+      03-04:
+        +schema: chap-03_question-04
+      03-05:
+        +schema: chap-03_question-05
+      03-06:
+        +schema: chap-03_question-06
+      03-07:
+        +schema: chap-03_question-07
+      03-08:
+        +schema: chap-03_question-08
+      03-09:
+        +schema: chap-03_question-09
+      03-10:
+        +schema: chap-03_question-10

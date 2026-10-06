@@ -2,9 +2,9 @@ select
     t.id,
     coalesce(sum(n.points * c.credits) / sum(c.credits), 0) as media
 from
-    takes as t,
-    nota_pontos as n,
-    course as c
+    universidade.takes as t,
+    universidade.nota_pontos as n,
+    universidade.course as c
 where
     (
         n.grade = t.grade
@@ -17,12 +17,12 @@ select
     id,
     0 as s_exists
 from
-    student as s
+    universidade.student as s
 where
     not exists (
         select 1
         from
-            takes as t
+            universidade.takes as t
         where
             t.id = s.id
     )

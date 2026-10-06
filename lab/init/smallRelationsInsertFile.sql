@@ -1,3 +1,5 @@
+set search_path to universidade;
+
 delete from prereq;
 
 delete from time_slot;
