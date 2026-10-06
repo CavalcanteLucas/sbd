@@ -69,13 +69,22 @@ build_03() {
         dbt_run "chap-03.03-07.03-07-4"
     }
 
+    build_03_08() {
+        dbt_exec "m_03_08_0"
+        dbt_run "chap-03.03-08.03-08-a1
+                chap-03.03-08.03-08-a2
+                chap-03.03-08.03-08-b
+                chap-03.03-08.03-08-c"
+    }
+
     # build_03_01
     # build_03_02
     # build_03_03
     # build_03_04
     # build_03_05
     # build_03_06
-    build_03_07
+    # build_03_07
+    build_03_08
 }
 
 
