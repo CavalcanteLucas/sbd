@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: escola
-    schema: escola
+  - name: universidade
+    schema: universidade
     tables:
       - name: advisor
         tests:
@@ -20,7 +20,7 @@ sources:
         tests:
           - check_row_count:
               arguments:
-                small: 13
+                small: 12  # 13 -> 12: 03-03-b2.sql
                 large: 200
       - name: department
         tests:
@@ -38,7 +38,7 @@ sources:
         tests:
           - check_row_count:
               arguments:
-                small: 7
+                small: 6  # 7 -> 6: 03-03-b2.sql
                 large: 100
       - name: section
         tests:

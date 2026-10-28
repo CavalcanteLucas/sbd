@@ -3,7 +3,15 @@ set -e
 
 target="$1"
 
-# dbt test --target $target
+dbt_test() {
+    dbt test --target $target --profiles-dir /dbt_ # --debug
+}
+
+sqlfluff_run() {
+    if ! sqlfluff fix models --verbose; then
+        echo "sqlfluff finished"
+    fi
+}
 
 dbt_run() {
     local item="$1"
@@ -14,7 +22,6 @@ dbt_exec() {
     local item="$1"
     dbt run-operation $item --target $target --profiles-dir /dbt_ # --debug
 }
-
 
 build_03() {
 
@@ -112,6 +119,19 @@ build_03() {
     build_03_10
 }
 
-build_03
+build_04() {
+    dbt_run "chap-04.04-01.04-01-1
+            chap-04.04-01.04-01-2"
+}
+
+#echo " [x] Linting and fixing SQL files..."
+#sqlfluff_run
+
+#echo " [x] Building dbt models..."
+#build_03
+build_04
+
+#echo " [x] Testing dbt models..."
+#dbt_test
 
 echo "Done!"

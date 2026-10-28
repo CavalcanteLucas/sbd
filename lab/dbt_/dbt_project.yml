@@ -40,3 +40,6 @@ models:
         +schema: chap-03_question-09
       03-10:
         +schema: chap-03_question-10
+    chap-04:
+      04-01:
+        +schema: chap-04_question-01
